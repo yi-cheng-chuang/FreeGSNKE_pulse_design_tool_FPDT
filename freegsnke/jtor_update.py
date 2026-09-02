@@ -115,6 +115,8 @@ class Jtor_universal:
         """
 
         obj = type(self).__new__(type(self)) if obj is None else obj
+        
+        #from IPython import embed; embed()
 
         copy_into(self, obj, "_refine_jtor")
         copy_into(self, obj, "dR")
